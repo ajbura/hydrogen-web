@@ -41,6 +41,14 @@ export class DecryptionResult {
         this._device = device;
     }
 
+    get userId() {
+        return this._device.userId;
+    }
+
+    get deviceId() {
+        return this._device.deviceId;
+    }
+
     setRoomNotTrackedYet() {
         this._roomTracked = false;
     }
